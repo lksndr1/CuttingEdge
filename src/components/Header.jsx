@@ -9,7 +9,6 @@ export default function Header() {
             <Button>Calculator</Button>
             <Button>Tools library</Button>
             <Button>Home</Button>
-            <Button>Home</Button>
         </header>
     )
 }
