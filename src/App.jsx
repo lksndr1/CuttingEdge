@@ -1,17 +1,20 @@
 import Header from './components/Header'
-import Button from './components/Button/Button'
+import Hero from './components/Hero'
+import CalculatorSection from './components/CalculatorSection'
+import ToolsLibSection from './components/ToolsLibSection'
+import { useState } from 'react'
 
 function App() {
+  const [tab, setTab] = useState('hero')
+
   return (
     <div>
-      <Header />
+      <Header activeTab={tab} onTabChange={(current) => setTab(current)} />
       <main>
-        <section>
-          <h1>Learn more about the importance of correct cutting parameters</h1>
-        </section>
-        <Button>Learn more...</Button>
+        {tab === 'hero' && <Hero />}
+        {tab === 'calculator' && <CalculatorSection />}
+        {tab === 'toollibrary' && <ToolsLibSection />}
       </main>
-
     </div>
   )
 }
