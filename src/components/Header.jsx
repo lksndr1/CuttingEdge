@@ -1,14 +1,13 @@
-import Button from "./Button/Button"
+import TabsSection from './TabsSection'
 
-export default function Header() {
+export default function Header({ activeTab, onTabChange }) {
+
     return (
         <header>
             <a href="/">
                 <img className='header-logo' src="/public/logo.jpg" alt="CE-logo" />
             </a>
-            <Button>Calculator</Button>
-            <Button>Tools library</Button>
-            <Button>Home</Button>
+            <TabsSection active={activeTab} onChange={onTabChange} />
         </header>
     )
 }
