@@ -1,29 +1,53 @@
-export const ways = [
+export const features = [
   {
-    title: 'Фильтрация информации и технологий.',
+    title: 'Surface Finish and Quality. ',
     description:
-      'Из огромного количества информации и навыков в IT, вы получаете только то, что необходимо и работает.',
+      'Proper selection of cutting speed, feed rate, and depth of cut ensures a desired surface finish and dimensional accuracy. Incorrect parameters can lead to poor finishes, tool marks, or deviations in dimensions.',
   },
   {
-    title: 'Формат обучения.',
+    title: 'Tool Life. ',
     description:
-      'Пока другие предлагают 50 страниц текста и вебинары по 2 часа, мы даем вам тот же объем знаний в одном тщательно подготовленном видео за 15 минут.',
+      'Cutting parameters affect the wear and tear on tools. High cutting speeds can lead to excessive heat, reducing tool life. Incorrect feed rates can cause tool chipping or breakage. Optimizing these parameters can significantly increase tool longevity, reducing costs.',
   },
   {
-    title: 'Применение разных форматов.',
+    title: 'Machining Time. ',
     description:
-      'Видео-уроки, практические задания, конспекты, мастер-классы, обсуждения в сообществе — все это дает полноценную картину и ускоряет процесс обучения.',
+      'Parameters like feed rate and cutting speed determine how quickly material is removed. Proper settings can minimize machining time without compromising quality, improving productivity.',
   },
   {
-    title: 'Наши преподаватели ведущие специалисты',
+    title: 'Material Removal Rate (MRR). ',
     description:
-      'VK, Avito, Тинькофф, Kaspersky — действующие разработчики с опытом преподавания для большой аудитории.',
+      'Efficient machining relies on maximizing MRR while maintaining safety and quality standards. This depends on the depth of cut, feed rate, and cutting speed.',
+  },
+  {
+    title: 'Heat Generation and Control. ',
+    description:
+      'Cutting speed and depth of cut influence the amount of heat generated. Excessive heat can damage the workpiece or deform it, as well as degrade the cutting tool.',
+  },
+  {
+    title: 'Avoidance of Defects. ',
+    description:
+      'Incorrect cutting parameters can cause issues like chatter, vibrations, or tool deflection, leading to defects such as poor tolerances, surface irregularities, or even scrapped parts.',
+  },
+  {
+    title: 'Energy Efficiency. ',
+    description:
+      'By optimizing cutting parameters, energy consumption during machining can be reduced, leading to cost savings and environmental benefits.',
+  },
+  {
+    title: 'Machine and Tool Capability. ',
+    description:
+      'Every machine and tool has specific limits. Setting parameters beyond these can cause mechanical failures or reduce the accuracy and reliability of the process.',
+  },
+  {
+    title: 'Cost-Effectiveness. ',
+    description:
+      'Properly chosen parameters reduce waste, improve tool life, minimize rework, and increase throughput, all of which contribute to lowering the overall cost of production.',
+  },
+  {
+    title: 'Conclusion. ',
+    description:
+      'Understanding and optimizing cutting parameters is crucial for balancing productivity, cost, and quality in machining operations. It ensures that the machining process is safe, reliable, and economically viable while delivering the desired results.',
   },
 ]
 
-export const differences = {
-  way: 'Узконаправленный подход. Учим только фронтенду, поэтому вы получаете именно те знания, за которыми пришли.',
-  easy: 'Доступность обучения. Простыми словами объясняем сложные темы на понятных примерах.',
-  program:
-    'Концентрация знаний. Например, модуль «HTML&CSS» даст вам столько же умений и навыков, как и 6 месяцев обучения по этой программе в госуниверситете.',
-}
