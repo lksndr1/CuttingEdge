@@ -4,6 +4,10 @@ import ToolManager from "./ToolManager";
 export default function ToolsLibSection() {
     const [toolList, setToolList] = useState([]);
 
+    const handleDelete = (indexToDelete) => {
+        setToolList((prevList) => prevList.filter((_, index) => index !== indexToDelete));
+    };
+
     return (
         <section>
             <h3>Tools Library</h3>
@@ -15,6 +19,7 @@ export default function ToolsLibSection() {
                         {tool.type === "drill" && ` Fob: ${tool.Fob}`}
                         {tool.type === "mill" && ` Fz: ${tool.Fz}`}
                         {tool.type === "tap" && ` Pitch: ${tool.pitch}`}
+                        <button onClick={() => handleDelete(index)}>Delete tool</button>
                     </li>
                 ))}
             </ul>
